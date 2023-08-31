@@ -1,0 +1,155 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  min-height: 100%;
+  display: flex;
+  padding: 50px;
+  background-color: #023;
+}
+
+/* 侧边栏 */
+.aside {
+  position: fixed;
+  padding: 50px 0;
+  margin-right: 50px;
+  width: 200px;
+}
+
+.aside h2 {
+  margin-bottom: 0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+  color: #409eff;
+}
+
+/* 侧边栏导航 */
+.nav {
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #fff;
+}
+
+.nav li {
+  /* padding: 0px 20px; */
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav li:nth-of-type(2) {
+  border-radius: 0 0 10px 10px;
+}
+
+.nav li:hover {
+  background-color: #002c42;
+}
+
+.nav li a {
+  display: block;
+  padding-left: 20px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav li a.active {
+  color: #409eff !important;
+}
+
+/* 内容区域 */
+.main {
+  height: 100%;
+  flex: 1;
+}
+
+.top-nav {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+}
+
+a.latestArt {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 20px;
+  color: #508fd3;
+}
+
+.nav-item span {
+  cursor: pointer;
+}
+
+.nav-item span.nick-name {
+  color: #409eff;
+}
+
+.nav-item span:last-of-type {
+  margin-left: 20px;
+}
+
+/* 卡片容器布局 */
+.content {
+  margin-left: 250px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card {
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  border: 1px solid #ebeef5;
+  padding: 20px;
+}
+
+.card:nth-child(n + 2) {
+  margin-top: 30px;
+}
+
+.card .title {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ebeef5;
+
+}
+
+/* 表单部分 */
+.form-check,
+.form-select {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.form-select {
+  width: auto;
+}
+
+.body form>div {
+  margin-top: 20px;
+}
+
+/* 表格列表部分 */
+.table img {
+  width: 100px;
+  height: 100px;
+}
+
+.table .bi {
+  cursor: pointer;
+}
+
+/* 分页 */
+.page-now {
+  line-height: 40px;
+  padding: 0 20px;
+}
